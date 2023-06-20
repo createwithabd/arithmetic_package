@@ -1,16 +1,24 @@
-import setuptools
+from setuptools import setup, find_packages
 with open("README.md", "r") as fh:
     long_description = fh.read()
-setuptools.setup(
+setup(
     name="arithmetic-abdDev", # Replace with your own username
-    version="0.0.3",
+    version="0.0.5",
     author="Abdullah",
     author_email="devopabd@gmail.com",
     description="A simple test arithmetic package",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/createwithabd/arithmetic_package",
-    packages=setuptools.find_packages(),
+    packages=find_packages(),
+    install_requires=[
+        'argparse'
+    ], 
+    entry_points={
+        'console_scripts': [
+            'arithmetic-abdDev = arithmetic:main'
+        ],
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
