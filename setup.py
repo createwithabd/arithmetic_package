@@ -3,7 +3,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
     name="arithmetic-abdDev", # Replace with your own username
-    version="0.0.2",
+    version="0.0.3",
     author="Abdullah",
     author_email="devopabd@gmail.com",
     description="A simple test arithmetic package",
