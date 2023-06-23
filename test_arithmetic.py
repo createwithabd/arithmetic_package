@@ -7,8 +7,8 @@ class TestArithmetic(unittest.TestCase):
     def test_addition(self):
         self.assertEqual(arithmetic.add(1, 2), 3)
 
-    # def test_subtraction(self):
-    #     self.assertEqual(arithmetic.subtract(2, 1), 1)
+    def test_subtraction(self):
+        self.assertEqual(arithmetic.subtract(2, 1), 1)
 
     def test_multiplication(self):
         self.assertEqual(arithmetic.multiply(5, 5), 25)
